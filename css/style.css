@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  color: #1a1a1a;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+}
+
+.signin {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(#f3fff7, #fff);
+  padding: 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.badge {
+  background: #d1fae5;
+  color: #15803d;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #16a34a;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: #16a34a;
+  color: #fff;
+}
+
+.secondary {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* IMAGE */
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* FEATURES */
+.features {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.green { background: #ecfdf5; }
+.blue { background: #eff6ff; }
+.purple { background: #f5f3ff; }
+.orange { background: #fff7ed; }
+
+/* HOW IT WORKS */
+.how-it-works {
+  padding: 80px 0;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.step {
+  position: relative;             
+  background: #fff;
+  padding: 40px 30px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* NUMBER BADGE */
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* CTA */
+.cta {
+  background: #16a34a;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.white {
+  background: #fff;
+  color: #16a34a;
+}
+
+.dark {
+  background: #14532d;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  color: #cbd5e1;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+footer a {
+  display: block;
+  margin: 8px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.green-icon {
+  background: #d1fae5;
+  color: #15803d;
+}
+
+.blue-icon {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.purple-icon {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.orange-icon {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 15px auto;
+}
+
+.why {
+  padding: 80px 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGE CONTAINER */
+.why-image {
+  width: 100%;
+  height: 420px;              /* controls visible size */
+  border-radius: 20px;
+  overflow: hidden;           /* VERY IMPORTANT */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* IMAGE ITSELF */
+.why-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* MAGIC LINE */
+  object-position: left;    /* keeps focus */
+}
+
+.why-image img {
+  transition: transform 0.4s ease;
+}
+
+.why-image:hover img {
+  transform: scale(1.08);
+}
