@@ -2,97 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Buyer Dashboard – Find Farmers</title>
+  <title>Buyer Dashboard</title>
   <link rel="stylesheet" href="css/buyer-dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<!-- TOP NAVBAR -->
+<!-- Top Bar -->
 <header class="topbar">
-  <div class="logo">🛒 AgroExport Connect</div>
+  <div class="logo">
+    <i class="fa-solid fa-cart-shopping"></i>
+    AgroExport Connect
+  </div>
 
   <div class="user">
-    <span id="buyerName"></span>
-    <a href="buyer-registation.html" onclick="logout()">Logout</a>
+    <div>
+      <strong>Yash Phadol</strong><br>
+      <small>Buyer Account</small>
+    </div>
+    <a href="#">Logout</a>
   </div>
 </header>
 
-<div class="layout">
+<div class="container">
 
-  <!-- SIDEBAR -->
+  <!-- Sidebar -->
   <aside class="sidebar">
-    <a class="active">Find Farmers</a>
-    <a>My Requirements</a>
-    <a>Messages <span class="badge">2</span></a>
+    <a class="active" onclick="showSection('find')"><i class="fa-solid fa-magnifying-glass"></i> Find Farmers</a>
+    <a onclick="showSection('req')"><i class="fa-solid fa-list"></i> My Requirements</a>
+    <a onclick="showSection('msg')">
+      <i class="fa-solid fa-message"></i> Messages <span class="badge">2</span>
+    </a>
   </aside>
 
-  <!-- MAIN CONTENT -->
+  <!-- Main -->
   <main class="content">
 
-    <h2>Find Farmers</h2>
-    <p class="sub">Browse verified farmers ready to export</p>
+    <!-- FIND FARMERS -->
+    <section id="find" class="page active">
+      <h2>Find Farmers</h2>
+      <p class="sub">Browse verified farmers ready to export</p>
 
-    <!-- SEARCH BAR -->
-    <div class="filters">
-      <input type="text" placeholder="Search farmers...">
-      <select>
-        <option>All Crops</option>
-      </select>
-      <select>
-        <option>All Locations</option>
-      </select>
-      <button>Search</button>
-    </div>
-
-    <!-- FARMER CARDS -->
-    <div class="cards">
-
-      <div class="card">
-        <div class="card-head">
-          <h3>Green Valley Farm</h3>
-          <span class="rating">⭐ 4.8</span>
-        </div>
-
-        <p class="location">Maharashtra, India</p>
-        <p><b>Available Crops</b><br>Organic Tomatoes, Bell Peppers</p>
-
-        <p class="label">Export Readiness</p>
-        <div class="progress"><div style="width:92%"></div></div>
-
-        <p><b>Available Quantity:</b> 500 kg</p>
-
-        <div class="actions">
-          <button class="primary">Send Enquiry</button>
-          <button class="secondary">View Profile</button>
-        </div>
+      <div class="filters">
+        <input placeholder="Search farmers...">
+        <select><option>All Crops</option></select>
+        <select><option>All Locations</option></select>
+        <button>Search</button>
       </div>
 
-      <div class="card">
-        <div class="card-head">
-          <h3>Sunrise Organic Farm</h3>
-          <span class="rating">⭐ 4.9</span>
+      <div class="cards">
+        <div class="card">
+          <h4>Green Valley Farm <span>⭐ 4.8</span></h4>
+          <p>Maharashtra, India</p>
+          <p><b>Crops:</b> Organic Tomatoes, Bell Peppers</p>
+          <div class="bar"><div style="width:92%"></div></div>
+          <p>Available Quantity: <b>500 kg</b></p>
+          <button class="primary">Send Enquiry</button>
+          <button class="outline">View Profile</button>
         </div>
 
-        <p class="location">Punjab, India</p>
-        <p><b>Available Crops</b><br>Basmati Rice, Wheat</p>
-
-        <p class="label">Export Readiness</p>
-        <div class="progress"><div style="width:95%"></div></div>
-
-        <p><b>Available Quantity:</b> 2000 kg</p>
-
-        <div class="actions">
+        <div class="card">
+          <h4>Sunrise Organic Farm <span>⭐ 4.9</span></h4>
+          <p>Punjab, India</p>
+          <p><b>Crops:</b> Basmati Rice, Wheat</p>
+          <div class="bar"><div style="width:95%"></div></div>
+          <p>Available Quantity: <b>2000 kg</b></p>
           <button class="primary">Send Enquiry</button>
-          <button class="secondary">View Profile</button>
+          <button class="outline">View Profile</button>
         </div>
       </div>
+    </section>
 
-    </div>
+    <!-- MY REQUIREMENTS -->
+    <section id="req" class="page">
+      <h2>My Requirements</h2>
+
+      <table>
+        <tr>
+          <th>Crop</th><th>Quantity</th><th>Status</th><th>Matches</th><th>Posted</th><th>Action</th>
+        </tr>
+        <tr>
+          <td>Organic Tomatoes</td><td>1000 kg</td><td><span class="active">Active</span></td>
+          <td>12 farmers</td><td>2 days ago</td><td><button>View</button></td>
+        </tr>
+        <tr>
+          <td>Basmati Rice</td><td>5000 kg</td><td><span class="active">Active</span></td>
+          <td>8 farmers</td><td>5 days ago</td><td><button>View</button></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- MESSAGES -->
+    <section id="msg" class="page">
+      <h2>Messages</h2>
+
+      <div class="message">
+        <h4>Green Valley Farm</h4>
+        <p>We can supply organic tomatoes...</p>
+        <button>Reply</button>
+      </div>
+
+      <div class="message">
+        <h4>Sunrise Organic Farm</h4>
+        <p>Our basmati rice is certified...</p>
+        <button>Reply</button>
+      </div>
+    </section>
 
   </main>
 </div>
 
-<!-- BUYER DASHBOARD JS -->
-<script src="js/buyer-dashboard.js"></script>
+<script src="buyer-dashboard.js"></script>
 </body>
 </html>
