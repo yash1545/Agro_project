@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmer Registration | AgroExport Connect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Farmer Registration CSS -->
+  <link rel="stylesheet" href="css/farmer-registration.css">
+</head>
+<body>
+
+<section class="register-section">
+  <div class="login-container">
+
+    <div class="back-link">
+      <a href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="login-card" style="max-width: 520px">
+
+      <div class="logo">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+
+      <h2>Register as Farmer</h2>
+      <p class="subtitle">Join thousands of farmers exporting globally</p>
+
+      <form id="farmerRegisterForm">
+
+        <div class="two-col">
+          <div>
+            <label>Full Name</label>
+            <div class="input-group">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" required placeholder="John Doe">
+            </div>
+          </div>
+
+          <div>
+            <label>Email Address</label>
+            <div class="input-group">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" required placeholder="farmer@example.com">
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <label>Phone Number</label>
+            <div class="input-group">
+              <i class="fa-solid fa-phone"></i>
+              <input type="tel" required placeholder="+91 9876543210">
+            </div>
+          </div>
+
+          <div>
+            <label>Farm Name</label>
+            <div class="input-group">
+              <i class="fa-solid fa-seedling"></i>
+              <input type="text" required placeholder="Green Valley Farm">
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <label>Location</label>
+            <div class="input-group">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" required placeholder="City, State, Country">
+            </div>
+          </div>
+
+          <div>
+            <label>Farm Size</label>
+            <div class="input-group">
+              <select required>
+                <option>Select size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <label>Password</label>
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" required>
+            </div>
+          </div>
+
+          <div>
+            <label>Confirm Password</label>
+            <div class="input-group">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" required>
+            </div>
+          </div>
+        </div>
+
+        <label class="terms">
+          <input type="checkbox" required>
+          I agree to the <a href="#">Terms</a> & <a href="#">Privacy Policy</a>
+        </label>
+
+        <button type="submit">Create Farmer Account</button>
+
+      </form>
+
+      <p class="register">
+        Already have an account?
+        <a href="login.html">Sign in here</a>
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<script src="js/farmer-registration.js"></script>
+</body>
+</html>
