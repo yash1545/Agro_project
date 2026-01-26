@@ -568,3 +568,36 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f6fb;
+      font-family: Arial;
+    }
+    .box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 350px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .buyer {
+      background: #1e5bff;
+      color: #fff;
+    }
+    .farmer {
+      background: #16a34a;
+      color: #fff;
+    }
