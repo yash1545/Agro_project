@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f5f7ff, #eef1ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  text-decoration: none;
+  color: #555;
+}
+
+.card {
+  background: #fff;
+  width: 520px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #1e5bff;
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 22px;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px 0 5px;
+}
+
+.sub {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.field {
+  flex: 1;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #1e5bff;
+}
+
+.terms {
+    display: flex;           
+    align-items: center;      
+    justify-content: flex-start; 
+    gap: 10px;                
+    width: fit-content;       
+    text-align: left;         
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.terms input[type="checkbox"] {
+    margin: 0;                
+    width: 16px;              
+    height: 16px;
+    flex-shrink: 0;           
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #1e5bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #164ad6;
+}
+
+.login {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.input-box i {
+  color: #999;
+  margin-right: 8px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+}

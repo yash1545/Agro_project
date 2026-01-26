@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register as Buyer</title>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/buyer-registion.css" />
+
+</head>
+<body>
+
+  <a href="Index.html" class="back">
+    <i class="fa-solid fa-arrow-left"></i> Back to Home
+  </a>
+
+  <div class="card">
+    <div class="icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+    <h2>Register as Buyer</h2>
+    <p class="sub">Connect with quality farmers worldwide</p>
+
+    <form onsubmit="return validateForm()">
+      <div class="row">
+        <div class="field">
+          <label>Full Name</label>
+          <div class="input-box">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" id="name" placeholder="John Smith">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Email Address</label>
+          <div class="input-box">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" id="email" placeholder="buyer@company.com">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Phone Number</label>
+          <div class="input-box">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" placeholder="+1 234 567 8900">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Company Name</label>
+          <div class="input-box">
+            <i class="fa-solid fa-building"></i>
+            <input type="text" placeholder="ABC Imports Ltd.">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Country</label>
+          <div class="input-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="United States">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Business Type</label>
+          <select>
+            <option>Select type</option>
+            <option>Exporter</option>
+            <option>Wholesaler</option>
+            <option>Retailer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Password</label>
+          <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="password" placeholder="Create a password">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Confirm Password</label>
+          <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="confirm" placeholder="Confirm your password">
+          </div>
+        </div>
+      </div>
+
+      <label class="terms">
+      <input type="checkbox" required>
+      I agree to the <a href="#">Terms</a> & <a href="#">Privacy Policy</a>
+    </label>
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <p class="login">
+      Already have an account? <a href="#">Sign in here</a>
+    </p>
+  </div>
+
+  <script src="js/buyer-registration.js"></script>
+</body>
+</html>
