@@ -34,3 +34,18 @@ function validateForm() {
     alert("Registration Successful!");
     return true;
 }
+// get buyer name from storage
+const buyerName = localStorage.getItem("loggedInUser");
+
+// login guard
+if (!buyerName) {
+  window.location.href = "buyer-login.html"; // ya login.html
+} else {
+  document.getElementById("buyerName").innerText = buyerName;
+}
+
+// logout
+function logout() {
+  localStorage.clear();
+  window.location.href = "buyer-login.html";
+}
