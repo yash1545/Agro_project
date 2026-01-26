@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ===== HEADER ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.logo {
+  background: #16a34a;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-link {
+  color: #475569;
+  text-decoration: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #f0fdf4, #ffffff);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #64748b;
+  max-width: 620px;
+  margin: auto;
+}
+
+/* ===== INFO CARDS ===== */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.green { background: #dcfce7; color: #16a34a; }
+.blue { background: #dbeafe; color: #2563eb; }
+.purple { background: #ede9fe; color: #7c3aed; }
+
+.info-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #16a34a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== MAIN GRID ===== */
+.contact-grid {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+}
+
+/* FORM */
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+.contact-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.contact-form button {
+  width: 100%;
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* SIDE INFO */
+.side-info > div {
+  margin-bottom: 20px;
+}
+
+.why-card {
+  background: #16a34a;
+  color: #fff;
+  padding: 26px;
+  border-radius: 18px;
+}
+
+.why-card ul {
+  margin-top: 14px;
+  list-style: none;
+}
+
+.why-card li {
+  margin-bottom: 10px;
+}
+
+.hours-card,
+.help-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.hour {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.help-card {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.help-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  padding: 18px;
+  text-align: center;
+  background: #020617;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

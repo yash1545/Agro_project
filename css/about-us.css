@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.topbar {
+  background: #ffffff;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #475569;
+  font-size: 14px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(to right, #ecfdf5, #f0f9ff);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ===== MISSION / VISION ===== */
+.mv-section {
+  max-width: 1100px;
+  margin: -60px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mv-card {
+  padding: 36px;
+  border-radius: 22px;
+  color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.mv-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.mv-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.mission { background: #16a34a; }
+.vision { background: #2563eb; }
+
+/* ===== STORY ===== */
+.story {
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.story-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.story-text p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* ===== VALUES ===== */
+.values {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 30px;
+}
+
+.values .subtitle {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.values-grid {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  padding: 10px;
+}
+
+.value-card i {
+  font-size: 20px;
+  background: #ecfdf5;
+  color: #16a34a;
+  padding: 14px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.value-card h4 {
+  margin-bottom: 6px;
+}
+
+.value-card p {
+  font-size: 13px;
+  color: #475569;
+}
+
+/* ===== IMPACT ===== */
+.impact {
+  background: #16a34a;
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.impact h2 {
+  font-size: 30px;
+}
+
+.impact p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.impact-grid {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.impact-grid strong {
+  font-size: 34px;
+  display: block;
+}
+
+.impact-grid span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ===== TEAM ===== */
+.team {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 30px;
+}
+
+.team p {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+.team-card {
+  max-width: 520px;
+  margin: 45px auto 0;
+  padding: 36px;
+  border-radius: 22px;
+  background: #eff6ff;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.team-card i {
+  font-size: 34px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #ecfdf5;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 32px;
+}
+
+.cta p {
+  margin-top: 8px;
+  color: #475569;
+}
+
+.cta-buttons {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta button {
+  padding: 14px 30px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.cta button.buyer {
+  background: #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .mv-section,
+  .story,
+  .values-grid,
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
