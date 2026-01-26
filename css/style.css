@@ -277,12 +277,12 @@ footer a {
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-/* IMAGE ITSELF */
+
 .why-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* MAGIC LINE */
-  object-position: left;    /* keeps focus */
+  object-fit: cover;          
+  object-position: left;    
 }
 
 .why-image img {
@@ -291,4 +291,44 @@ footer a {
 
 .why-image:hover img {
   transform: scale(1.08);
+}
+
+.why-choose {
+    max-width: 650px;          
+    margin: 10px auto;         
+    padding: 15px 30px;        
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+body {
+    background-color: #f4f7f6;
+}
+.highlight {
+    color: #27ae60;
+}
+
+
+.why-choose h2 {
+    font-size: 24px;           
+
+
+    
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+
+.features li {
+    font-size: 16px;          
+    padding: 8px 0;
+    padding-left: 28px;
+}
+
+
+.features li::before {
+    font-size: 16px;
+    padding: 0px 0;        
+    margin: 0;
+    line-height: 1.4;
 }
