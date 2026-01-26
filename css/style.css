@@ -20,6 +20,7 @@ body {
   background: #fff;
   box-shadow: 0 1px 10px rgba(0,0,0,0.05);
   position: sticky;
+  z-index: 1000; 
   top: 0;
 }
 
@@ -95,6 +96,7 @@ nav a {
 /* IMAGE */
 .hero-image {
   position: relative;
+  z-index: 1;
 }
 
 .hero-image img {
