@@ -3,8 +3,8 @@ document
   .addEventListener("submit", function (e) {
     e.preventDefault();
 
-    alert("Farmer account created successfully (frontend demo)");
+    alert("Farmer account created successfully ");
 
     // Redirect to farmer dashboard
-    window.location.href = "login.html";
+    window.location.href = "farmer-dashboard.html";
   });
