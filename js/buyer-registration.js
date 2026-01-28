@@ -33,4 +33,6 @@ function validateForm() {
     // Agar sab sahi hai
     alert("Registration Successful!");
     return true;
+
+    
 }
