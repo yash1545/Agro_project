@@ -568,14 +568,7 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
-body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f4f6fb;
-      font-family: Arial;
-    }
+
     .box {
       background: #fff;
       padding: 40px;
