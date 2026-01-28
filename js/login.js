@@ -39,3 +39,10 @@ function showSection(section) {
   document.querySelectorAll(".sidebar a")[indexMap[section]]
     .classList.add("active");
 }
+function logout() {
+  // user data clear karo
+  localStorage.removeItem("farmerName");
+
+  // login page pe redirect karo
+  window.location.href = "farmerlogin.html";
+}
