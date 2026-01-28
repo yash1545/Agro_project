@@ -184,6 +184,12 @@ nav a {
   text-align: center;
   padding: 80px 20px;
 }
+.cta-buttons {
+  margin-top: 30px;          
+  display: flex;
+  justify-content: center;
+  gap: 16px;                 
+}
 
 .white {
   background: #fff;
